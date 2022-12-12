@@ -45,13 +45,13 @@ export class App extends React.Component {
   render() {
     return (
       <>
-        <Section title="feedback">
+        <Section title="Please leave feedback">
           <FeedbackOptions
             options={OPTIONS_LIST}
             onLeaveFeedback={this.onClickHandler}
           ></FeedbackOptions>
         </Section>
-        <Section title="feedback">
+        <Section title="Statistics">
           <Statitstics
             good={this.state.good}
             neutral={this.state.neutral}

@@ -1,5 +1,6 @@
 import { StatitsticsList, Value, Header, Container } from './statistics.styled'
 import { Notification } from 'components/notification-message/notification'; 
+import {PropTypes} from 'prop-types'
 
 export const Statitstics = props => {
   return (
@@ -23,3 +24,11 @@ export const Statitstics = props => {
     </Container>
   );
 };
+
+Statitstics.propTypes = {
+    good: PropTypes.number.isRequired,
+    neutral: PropTypes.number.isRequired,
+    bad: PropTypes.number.isRequired,
+    total: PropTypes.number.isRequired,
+    positivePercentage: PropTypes.any.isRequired
+}
